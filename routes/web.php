@@ -15,10 +15,10 @@ Route::get('/', 'OutletMapController@index');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+//Route::get('/home', 'HomeController@index')->name('home');
 
 /*
  * Outlets Routes
  */
-Route::get('/our_outlets', 'OutletMapController@index')->name('outlet_map.index');
+Route::get('/home', 'OutletMapController@index')->name('outlet_map.index');
 Route::resource('outlets', 'OutletController');
